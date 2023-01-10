@@ -89,7 +89,7 @@ class DocumentRuleProcessor:
         result["created_day"] = self._normalize_day(new_metadata["created_day"], old_metadata["created_day"])
 
         original_created_date = dateutil.parser.isoparse(old_metadata["created"])
-        new_created_date = datetime(int(result["created_year"]), int(result["created_month"]), int(result["created_day"]), 12, tzinfo=original_created_date.tzinfo)
+        new_created_date = datetime(int(result["created_year"]), int(result["created_month"]), int(result["created_day"]), tzinfo=original_created_date.tzinfo)
         result["created"] = new_created_date.isoformat()
         result["created_date"] = new_created_date.strftime("%F") # %F means YYYY-MM-DD
         
