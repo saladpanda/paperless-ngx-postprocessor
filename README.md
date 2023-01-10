@@ -120,7 +120,7 @@ These can be used like this:
 ```
 {{ variable | custom_filter("parameter") }}
 ```
-See [rulesets.d/example.yml](rulesets.d/example.yml) for examples of how to use these filters.
+See [rulesets.d/example.yml.sample](rulesets.d/example.yml.sample) for examples of how to use these filters.
 
 ### Combining rulesets
 
